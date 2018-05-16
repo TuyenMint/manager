@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>githup</title>
+    <script language="javascript">
+        function checkAll(){
+            var txtusername = fm.txtusername.value;
+            if(txtusername == ""){
+                alert("Bạn phải nhập username");
+                fm.txtusername.focus();
+                return false;
+            }
+            var txtgmail = fm.txtgmail.value;
+            if(txtgmail == ""){
+                alert("Bạn phải nhập gmail");
+                fm.txtgmail.focus();
+                return false;
+            }
+            var txtpass = fm.txtpass.value;
+            if(txtpass == ""){
+                alert("Bạn phải nhập password");
+                fm.txtpass.focus();
+                return false;
+            }
+            return true;
+        }
+        </script>
+
+</head>
+<body>
+    <form name="fm" method="post" action="" onSubmit="return checkAll();">
+        <h2>Create your personal account </h2>
+
+        <h3>User name: 
+                    <input name="txtusername" type="text" id="txtuername"></h3>                    
+        <p> This will be your username. You can add the name of your organization later.</p>
+            <h3>Gmail: 
+                    <input name="txtgmail" type="text" id="txtgmail"></h3>
+            <p> We’ll occasionally send updates about your account to this inbox. We’ll never share your email address with anyone.</p>
+            <h3>Password: 
+                    <input name="txtpass" type="text" id="txtpass"></h3>
+            <p> Use at least one lowercase letter, one numeral, and seven characters.</p>
+            <p> By clicking “Create an account” below, you agree to our terms of service and privacy statement. We’ll occasionally send you account related emails.</p>
+            <p><input type="submit" name="Save" value="Create an account"></p>
+
+    </form>
+    
+</body>
+</html>
