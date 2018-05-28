@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tạo bảng</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
            table,td,th {
                 border: 1px solid black;
                 border-collapse: collapse;
@@ -16,18 +20,45 @@
             th,td {
                 padding: 12px;
             }
+            #tong{
+            width: 1000px;
+            margin: auto;
+           
+        }
+            #Header{
+                border: 2px solid red;
+                width: 1000px;
+                height: 200px;
+                display: table;
+            }
+            #left{
+                width: 250px;
+                height: 60px;
+                border: 2px solid yellow;
+                display: table-cell;
+
+            }
             #body{
-            margin: 20px auto;
-            padding: 0px;
+            width: 550px;
+            height: 60px;
+            display: table-cell;
+            }
+            #footer{
+                clear: both;
+                width: 1000px;
+                height: 200px;
+                border: 2px solid blue;
             }
             </style>
 </head>
 <body>
-    <div id="Header"><h1 align="center"> BẢNG GIẢI THƯỞNG NĂM 2018 </h1> </div>
+    <div id="tong"> 
+    <div id="Header"></div>
     <div id="main">
     <div id="left"> </div>
     <div id="body">
         <table  align="center" width=800px>
+                <h1 align="center"> BẢNG GIẢI THƯỞNG NĂM 2018 </h1>
             <tr bgcolor="blue" >
                 <th rowspan="2" width=120>Avata khách hàng</th>
                 <th rowspan="2" width=50>MSTT</th>
@@ -85,5 +116,6 @@
     </div>
     </div>
     <div id="footer"> </div>
+</div>
 </body>
 </html>
