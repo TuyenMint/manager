@@ -1,14 +1,67 @@
-@charset "utf-8";
-/* CSS Document */
-.tong{ width:780px; height:900px; margin:auto}
-.tren{width:100%; height:125px;}
-img {
-    float: left;
+*{
+    margin: 0px;
+    padding: 0px;
 }
-.tren1{ width:780px; height:36px; background:#0033FE; color:#FFF; line-height:36px}
-.trai { width:140px; height:745px; background:#0099FF; float:left; background-image:url(Images/nen_trai.gif)}
-.phai{width:140px; height:745px; background:#0099FF; float:right; background-image:url(Images/nen_phai.gif)}
 
-.giua{ width:500px; height:745px; float:left}
+    #tong{
+    width: 1200px;
+    margin: auto;
+   
+}
+    #Header{
+        border: 2px solid red;
+        width: 800px;
+        height: 400px;
+        display: table;
+    }
+    #left{
+        width: 600px;
+        height: 1400px;
+        border: 2px solid yellow;
+        display: table-cell;
+
+    }
+    #body{
+    width: 1400px;
+    height: 1400px;
+    border: 2px solid orange;
+    display: table-cell;
+    }
+    #footer{
+        clear: both;
+        width: 1200px;
+        height: 200px;
+        border: 2px solid blue;
+    }
+    .footer_phia_tren {
+        float: left;
+        width: 235px;
+    }
+
+    .footer_phia_tren ul li a {
+        text-decoration: none;
+        color: black;
+    }
+    .btn {
+        border: none;
+        outline: none;
+        padding: 12px;
+        background-color: white;
+        cursor: pointer;
+      }
+      
+      .btn:hover {
+        background-color: #ddd;
+      }
+      
+      .btn.active {
+        background-color: #666;
+        color: white;
+      }
+      .container {
+        margin-top: 20px;
+        overflow: hidden;
+      }
 
 
+      
